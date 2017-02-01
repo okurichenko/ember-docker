@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<table>
+{{#each model as |book|}}
+  <tr>
+    <td>{{book.id}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.year}}</td>
+    <td>{{book.pageCount}}</td>
+  </tr>
+{{/each}}
+</table>
